@@ -1,0 +1,15 @@
+//accept two number dasplay highest value//
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int a,b;
+clrscr();
+printf("\nEnter any two number:");
+scanf("\n%d%d",&a,&b);
+if(a>b)
+	printf("\nHighest value=%d",a);
+else
+	printf("\nHighest value=%d",b);
+getch();
+}

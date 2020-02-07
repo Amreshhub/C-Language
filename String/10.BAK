@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int num,fat;
+printf("\nEnter the number:");
+scanf("\n%d",&num);
+while(num>0)
+{
+fat=fat*num;
+num--;
+}
+printf("\n%d factroile=%d",num,fat);
+getch();
+}

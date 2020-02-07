@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+int _strlen(char pstr[]){
+int d;
+for(d=0;pstr[d]!='\0';a++);
+return(d);
+}
+void main(){
+char str1[100];
+int d,length;
+a1:clrscr();
+printf("\nEnter a String::");
+fflush(stdin);
+gets(str1);
+if(str1[0]=='\0')
+{
+	printf("\nMust Enter string:");
+	delay(3000);
+	goto a1;
+	}
+length=_strlen(str1);
+	printf("\nLength of given string=%d",length);
+getch();
+}

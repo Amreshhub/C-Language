@@ -1,0 +1,48 @@
+void main()
+{
+char pname;
+int a=3;
+float mrp,rate,dis,net;
+clrscr();
+printf("\nEnter Publishar name from givin book:");
+scanf("\n%c",&pname);
+switch(pname)
+{
+case't':
+case'T':
+	rate=10.0;
+	break;
+case'B':
+case'b':
+	rate=15.0;
+	break;
+case'V':
+case'v':
+	rate=20.0;
+	break;
+default:
+	rate=25.0;
+	break;
+}
+if(a)
+{
+printf("\nEnter Mrp of the given book:");
+scanf("\n%f",&mrp);
+if(mrp>0)
+{
+dis=mrp*rate/100;
+net=mrp-dis;
+clrscr();
+printf("\n\t\t\t*************bill************************");
+printf("\n\t\t\tPublishar name of the given book:%c",pname);
+printf("\n\t\t\tMrp in Given book:               %f",mrp);
+printf("\n\t\t\tDiscount Rate :                  %f%%",rate);
+printf("\n\t\t\tDiscount amount in Rs:           %f",dis);
+printf("\n\t\t\t===========================================");
+printf("\n\t\t\tNet paybal amount in Rs:         %f",net);
+}
+else{
+	printf("\nInvalied Mrp Found Plz enter Agan:");
+}
+getch();
+}

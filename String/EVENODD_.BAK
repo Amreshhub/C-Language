@@ -1,0 +1,28 @@
+#include<iostreame.h>
+#include<conio.h>
+struct evenodd{
+private:int num,even=0,odd=0;
+public:void input(){
+cout<<"\nEnter any number";
+cin>>num;
+}
+void even(){
+if(num%2==0)
+even++;
+else
+odd++;
+}
+void output(){
+cout<<"\nNumber is even="<<even;
+cout<<"\nNumber is odd="<<odd;
+}
+};
+void main(){
+clrscr();
+evenodd x,*px;
+px=&x;
+px->input();
+px->even();
+px->output();
+getch();
+}

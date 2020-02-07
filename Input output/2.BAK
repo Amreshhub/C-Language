@@ -1,0 +1,6 @@
+void main()
+{
+clrscr();
+printf("\t\t\t\"I am Happy\"\n\t\t\t\t\tMy Name is AMRESH.");
+getch();
+}

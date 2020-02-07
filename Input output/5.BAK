@@ -1,0 +1,11 @@
+void main()
+{
+char a;
+clrscr();
+printf("\nEnter any charcter:");
+scanf("\n%c",&a);
+printf("\n%c",a);
+printf("\n%c",a);
+printf("\n%c",a);
+getch();
+}

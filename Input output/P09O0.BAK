@@ -1,0 +1,14 @@
+void main()
+{
+int num,dcount=0;
+clrscr();
+printf("Enter a number:");
+scanf("\n%d",&num);
+while(num>0)
+{
+       num=num/10;
+       dcount++;
+       }
+printf("\nTotal no of degite:%d",dcount);
+getch();
+}2

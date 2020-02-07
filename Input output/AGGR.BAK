@@ -1,0 +1,62 @@
+void main()
+{
+long int reg;
+int w=3,c,cpp,java,total,agg;
+clrscr();
+printf("\nEnter Student Regerstrion no:");
+scanf("\n%ld",&reg);
+if(reg>0)
+{
+	printf("\nEnter markas in c:");
+	scanf("\n%d",&c);
+	if(c>0)
+	{
+		printf("\nEnter Marks Obtained in cpp");
+		scanf("\n%d",&cpp);
+		if(cpp>0)
+		{
+			printf("\nEnter Marks Obtanted in Java:");
+			scanf("\n%d",&java);
+			if(java>0)
+			{
+
+			}else{
+				printf("\nInvalied Markas Entery Plz RE Enter:");
+					w=0;}
+		}
+		else{
+			printf("\nInvalied Markas Entery Plz Re Enter:");
+				w=0;}
+	}
+	else{
+		printf("\nInvalied Markas Entery Plz Re Enter:");
+			w=0;}
+}
+else{
+	printf("\nInvalied Student Reggeristrion nummer found plz Re Enter:");
+		w=0;}
+if(w)
+{
+total=c+cpp+java;
+agg=total*100/180;
+clrscr();
+printf("\t\t\t=======================================================");
+printf("\n\t\t\t\tMarks Detail");
+printf("\n\t\t\t=====================================================");
+printf("\n\t\t\tRegstraition  Number  ::          %ld",reg);
+printf("\n\t\t\tMarks Obtained in C   ::          %d",c);
+printf("\n\t\t\tMarks obtained in C++ ::          %d",cpp);
+printf("\n\t\t\tMarks Obtained in Java::          %d",java);
+if(agg>=75)
+	printf("\n\t\t\tRemark::           	  %d EXCELENT",total);
+if(agg>=65)
+	printf("\n\t\t\tRemark::           	  %d  VERY GOOD",total);
+if(agg>=50)
+	printf("\n\t\t\tRemark::           	  %d  GOOD",total);
+if(agg>=40)
+	printf("\n\t\t\tRemark::          	  %d   SATIFSFATORY",total);
+if(agg<40)
+	printf("\n\t\t\tRemark::             	  %d    NOT SATIFSFAYTORY",total);
+}
+getch();
+}

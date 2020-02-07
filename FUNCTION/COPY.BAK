@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<conio.h>
+int strcpy(int *a, int *b){
+for(i=0;*b!='\0';*a=*b,i++,*a++,b++);
+*a='\0';
+}
+void main(){
+char s[100],d[100],copy;
+clrscr();
+printf("\nEnter first string:");
+fflush(stdin);
+gets(s);
+fflush(stdin);
+gets(d);
+copy=strcpy(s,d);
+printf("\nCopyed string=%s",s);
+getch();
+}

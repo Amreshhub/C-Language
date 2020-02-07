@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+#define size 200
+void main()
+{
+int anum[size],num,sum,cnum,d,a;
+a1:clrscr();
+printf("Enter A Number:");
+scanf("\n%d",&num);
+if(num<=0)
+{
+	printf("\nMust Enter positive value:");
+	delay(2000);
+	goto a1;
+	}
+for(cnum=num,a=0,sum=0;cnum>0;d=cnum%10,anum[a++]=sum=sum+d*d*d,cnum=cnum/10);
+if(num==sum)
+	printf("\n%d iS amstriong number",num,*(anum+a));
+else
+	printf("\n%dis not amstrong number",num,*(anum+a));
+getch();
+}

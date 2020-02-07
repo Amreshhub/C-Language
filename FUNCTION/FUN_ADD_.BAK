@@ -1,0 +1,55 @@
+#include<stdio.h>
+#include<conio.h>
+int numaric(int a,int b){
+void sum(){
+int add;
+add=a+b;
+	printf("\nSum of two number=%d",add);
+}
+int Sum(){
+int add1;
+add1=a+b;
+return(add);
+}
+void prod(){
+int milt;
+mult=a*b;
+	printf("\nProducet of two number=%d",mult);
+}
+int Prod(){
+int milt1;
+milt1=a*b;
+return(milt1);
+}
+void average(){
+int avg;
+avg=(a+b)/2;
+	printf("\nAverage value of two number=%d",avg);
+}
+int Average(){
+int avg1;
+avg1=(a+b)/2;
+return(avg1);
+}
+void main(){
+int num1,num2,a,b,c;
+s1:clrscr();
+printf("'\nEnter any two number:");
+scanf("\n%d%d",&num1,&num2);
+if(num1&&num2<1)
+{
+	printf("\nInvailed entery found plz Enter positive value:");
+	delay(2000);
+	goto s1;
+	}
+sum(num1,num2);
+a=Sum(num1,num2);
+	printf("\nSum of two number=%d",a);
+prod(num1,num2);
+b=Prod(num1,num2);
+	printf("\nProduct of two number=%d",b);
+average(num1,num2);
+c=Average(num1,num2);
+	printf("\nAverage value=%d",c);
+getch();
+}

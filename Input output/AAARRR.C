@@ -1,0 +1,64 @@
+void main()
+{
+int a=9;
+long int artno;
+char cname;
+float mrp,rate,dis,pay,vat,net;
+clrscr();
+printf("\nEnter Artical no AS A(Action)/L(Liberity)/W(Woodland)");
+scanf("\n%ld",&artno);
+if(artno>0)
+{
+	printf("\nEnter Compenay name As A(action)/l(Liberity)/W(Woodland):");
+	scanf("\n%c",&cname);
+	switch(cname)
+	{
+	case 'A':
+	case 'a':
+		rate=20.0;
+		break;
+	case 'L':
+	case 'l':
+		rate=15.0;
+		break;
+	case'W':
+	case'w':
+		rate=50.0;
+		break;
+	default:
+		printf("\nInvalied Compenay name found Plz enter agan:");
+			a=0;
+
+	}
+
+}
+else{
+	printf("\nInvalied Artical no found PLz Enter agan:");
+		a=0;}
+if(a)
+{
+printf("\nEnter Mrp of the given footware:");
+scanf("\n%f",&mrp);
+if(mrp>0)
+{
+dis=mrp*rate/100;
+pay=mrp-dis;
+vat=pay*12.5/100;
+net=pay+vat;
+clrscr();
+printf("\n\t\t\t***************bill********************");
+printf("\n\t\t\tArtical no As A(Action)/L(liberity)/W(woodland):%ld",artno);
+printf("\n\t\t\tMrp of he given footware:                       %f",mrp);
+printf("\n\t\t\tDiscount rate:                                  %f",rate);
+printf("\n\t\t\tDiscount amount in Rs:                          %f",dis);
+printf("\n\t\t\t=============================================");
+printf("\n\t\t\tPaybal amount in Rs:                            %f",pay);
+printf("\n\t\t\t12.5%%Vat in Rs:                                %f",vat);
+printf("\n\t\t\t=============================================");
+printf("\n\t\t\tNet bill amount in Rs:                          %f",net);
+}
+else
+	printf("\nInvalied Mrp found Plz |Enter agan:");
+}
+getch();
+}

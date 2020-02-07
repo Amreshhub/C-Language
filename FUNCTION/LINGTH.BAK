@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<conio.h>
+int lingth(int *pstr){
+int i;
+for(;*pstr!='\0';i++,*pstr++);
+return(i);
+}
+void main(){
+char str[100],count;
+clrscr();
+printf("\nEnter a string");
+fflush(stdin);
+gets(str);
+copy=lingth(str);
+printf("\nLingth of given string=%d",copy);
+getch();
+}

@@ -1,0 +1,19 @@
+`#include<stdio.h>
+#include<conio.h>
+void main()
+{
+char amr1[80],amr2[80];
+int a,b;
+clrscr();
+printf("\nEnter first string:");
+fflush(stdin);
+gets(amr1);
+printf("\nEnter second string:");
+fflush(stdin);
+gets(amr2);
+for(a=0;*(amr1+a)!='\0';a++);
+for(b=0;*(amr2+b)!='\0';amr1[a]=amr2[b],a++,b++);
+amr1[a]='\0';
+printf("\nConcalenate =:%s",amr1);
+getch();
+}

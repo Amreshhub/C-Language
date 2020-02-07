@@ -1,0 +1,10 @@
+void main()
+{
+int n;
+clrscr();
+printf("Enter any integer no:");
+scanf("\n%d",&n);
+if(n>0||n<122)
+printf("\nAssci value %c");
+getch();
+}

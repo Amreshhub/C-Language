@@ -1,0 +1,16 @@
+void main()
+{
+int a=1,n,num=0.0, count=0.0;
+clrscr();
+printf("Enter any no:");
+scanf("\n%d",&n);
+while(a<=n)
+{
+	num=num/10;
+	count++;
+	a++;
+	}
+printf("\nTotal no of degit:",count);
+getch();
+}
+

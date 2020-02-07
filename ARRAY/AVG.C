@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<conio.h>
+#define row 100
+#define col 100
+void main(){
+int mat[row][col],sum=0,m,n,r,c;
+float avg=0.0;
+clrscr();
+printf("\nHow Many row col do you want:");
+scanf("\n%d",&m);
+printf("\nWho many colmun do you to enter:");
+scanf("\n%d",&n);
+for(r=0;r<m;r++){
+printf("\nInesret value of row,\n",r+1);
+for(c=0;c<n;c++){
+printf("\nEnter no:%d",c+1);
+scanf("\n%d",&mat[r][c]);
+sum=sum+mat[r][c];
+}
+}
+avg=sum/(m*n);
+printf("\nSum of %d no=%d",m*n,sum);
+printf("\nAverage value of %d no=%f",m*n,avg);
+getch();
+}

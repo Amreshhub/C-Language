@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<conio.h>
+void swap(int *a,int *b){
+int temp;
+temp=*a;
+*b=*b;
+*b=temp;
+void main(){
+int num1,num2;
+clrscr();
+printf("\nEnter any two number:");
+scanf("\n%d%d",&num1,&num2);
+printf("\nValue before 1st value=%d,second value=%d",num1,num2);
+swap(&num1,&num2);
+printf("\nvalue after i1st valu=%d,second value=%d",num1,num2);
+getch();
+}

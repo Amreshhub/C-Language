@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+char str[100],*s;
+int i;
+clrscr();
+printf("\nEnter a string:");
+gets(s);
+printf("\nKeyed String:%s",s);
+for(;*s!='\0';s++)
+printf("%c",*s);
+getch();
+}

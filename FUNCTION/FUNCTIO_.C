@@ -1,0 +1,36 @@
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+#define size 200
+int smollest(int *pnum,int n){
+int list,s;
+for(s=0;s<n;s++)
+{
+if(s==0)
+list=pnum[s];
+else
+if(pnum[s]<list)
+list=pnum[s];
+}
+return(list);
+}
+void main(){
+int num[size],s,list,n;
+s1:clrscr();
+printf("\nHow many number do you want to enter:");
+scanf("\n%d",&n);
+if(n<=0||n>size)
+{
+	printf("\nInvalied number found Plz Enter number between 1 To %d",size);
+	delay(3000);
+	goto s1;
+	}
+for(s=0;s<n;s++)
+{
+printf("\nEnter number %d::",s+1);
+scanf("\n%d",&num[s]);
+}
+list=smollest(num,n);
+	printf("\nSmollest value %dnumber=%d",n,list);
+getch();
+}

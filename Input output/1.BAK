@@ -1,0 +1,5 @@
+void main()
+{
+clrscr();
+printf("\t\t\tHello Megasoft Patna\n\t\t\t\tGood Morning Frindes..........!");
+getch();

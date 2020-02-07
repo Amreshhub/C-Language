@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+long int num,sum=0.0,b;
+clrscr();
+printf("\nEnter a numar:");
+scanf("'\n%ld",&num);
+while(num)
+{
+	b=num%10;
+	sum=sum+b;
+	num=num/10;
+	}
+printf("\nTotal sum of degit:%ld",sum);
+getch();
+}
+

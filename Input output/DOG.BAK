@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int num,a,rev=0.0,cnum;
+clrscr();
+printf("Enter a number:");
+scanf("\n%d",&num);
+cnum=num;
+while(cnum)
+{
+	a=cnum%10;
+	rev=rev*10+a;
+	cnum=cnum/10;
+	}
+if(num==rev)
+{
+	printf("\n %d is an paldriom no",num);
+else
+	printf("\n%d is an not paldrom no",num);
+getch();
+}

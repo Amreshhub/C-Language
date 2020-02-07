@@ -1,0 +1,52 @@
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+void high(int a,int b){
+int g;
+if(a>b)
+	printf("\nHigest value=%d",a);
+else
+	printf("\nHighest value=%d",b);
+}
+int High(int a,int b){
+int ge;
+if(a>b)
+ge=a;
+else
+ge=b;
+return(ge);
+}
+void list(int a,int b){
+int s;
+if(a<b)
+	printf("\nSmollest value=%d",a);
+else
+	printf("\nSmollest value=%d",b);
+}
+int List(int a,int b){
+int smoll;
+if(a<b)
+smoll=a;
+else
+smoll=b;
+return(smoll);
+}
+void main(){
+int num1,num2,c,d;
+s1:clrscr();
+printf("\nEnter any two number:");
+scanf("\n%d%d",&num1,&num2);
+if(num1<0||num2<0)
+{
+	printf("\nPlz Enter positive value ");
+	delay(3000);
+	goto s1;
+	}
+high(num1,num2);
+c=High(num1,num2);
+	printf("\nHigest value=%d",c);
+list(num1,num2);
+d=List(num1,num2);
+	printf("\nSmollast value=%d",d);
+getch();
+}

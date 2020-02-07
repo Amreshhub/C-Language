@@ -1,0 +1,14 @@
+ #include<stdio.h>
+ #include<conio.h>
+ void main()
+ {
+ char a[100],b;
+ int s,v;
+ clrscr();
+ printf("\nEnter a String:");
+ gets(a);
+ for(v=0,*(a+v)!='\0';v++);
+ for(s=0,--s;s<j;d=*(a+s,a[s]=a[v],a[v]=d,s++,v--);
+ printf("\nReverse string%s",a);
+ getch();
+ }

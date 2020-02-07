@@ -1,0 +1,49 @@
+void main()
+{
+long int ecode;
+int a=9;
+float basic,da,hra,gross,itax,net;
+clrscr();
+printf("\nEnter Empolley code:");
+scanf("\n%ld",&ecode);
+if(ecode>0)
+{
+	printf("\nEnter Empolley Basic pay in Rs:");
+	scanf("\n%f",&basic);
+	if(basic>0)
+	{
+		if(basic>400)
+			da=basic*10/100;
+		else
+			da=basic*15/100;
+		if(basic<8000)
+			hra=basic*20/100;
+		else
+			hra=basic*15/100;
+	}
+	else{
+		printf("\nInvalied basic pay found plz enter agan:");
+			a=0;}
+}else{
+	printf("\nInvalied Empolloye code found plz enter agan:");
+		a=0;}
+if(a)
+{
+gross=basic+da+hra;
+if(gross>12000)
+	itax=gross*12/100;
+net=gross-itax;
+clrscr();
+printf("\t\t\t=======================================================");
+printf("\n\t\t\t\t\tSalary Detail");
+printf("\n\t\t\t=====================================================");
+printf("\n\t\t\tEmpoloyee Number    ::                 %ld",ecode);
+printf("\n\t\t\tBasic Pay in Rs     ::                 %f",basic);
+printf("\n\t\t\tDA in Rs            ::                 %f",da);
+printf("\n\t\t\tHRA in Rs           ::                 %f",hra);
+printf("\n\t\t\tGross Salary in Rs  ::                 %f",gross);
+printf("\n\t\t\tIncomtax Tax Deduction in Rs           %f",itax);
+printf("\n\t\t\tNet Paybal amount in Rs                %f",net);
+}
+getch();
+}

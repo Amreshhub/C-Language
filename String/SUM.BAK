@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+#define size 200
+void main()
+{
+int num[size],*anum,sum=0,d,a,n;
+anum=num;
+s1:clrscr();
+for(a=0;a<n;a++)
+{
+	printf("\nEnter number:%d",a+1);
+	scanf("\n%d",&anum);
+	if(anum<=0)
+	{
+	printf("\nMust Enter positive value:");
+	delay(2000);
+	goto s1;
+	}
+for(a=0;pnum>0;d=pnum%10,sum=sum+d,pnum=pnum/10,pnum++,a++);
+printf("\nSum of deget=%d",sum);
+getch();
+}

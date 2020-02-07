@@ -1,0 +1,55 @@
+//producet detils//
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+void main()
+{
+long int pcode;
+float mrp,qty,total,dis,pay,vat,net;
+a1:clrscr();
+	printf("\nEnter Producet code on items:");
+	scanf("\n%ld",&pcode);
+	if(pcode<=0)
+	{
+		printf("\nInvalied producet code found plz enter agan:");
+		delay(3000);
+		goto a1;
+		}
+b1:printf("\nEnter Mrp  on  given product:");
+   scanf("\n%f",&mrp);
+   if(mrp<=0)
+   {
+	printf("\nInvalied mrp found plz enter agin:");
+	delay(3000);
+	goto b1;
+	}
+c1:printf("\nEnter Quantety of the given producet:");
+   scanf("\n%f",&qty);
+   if(qty<=0)
+   {
+	printf("\nInvalied quentaty found enter agin::");
+	delay(3000);
+	goto c1;
+	}
+total=mrp*qty;
+if(total>5000)
+	dis=total*30/100;
+else
+	dis=total*15/100;
+pay=total-dis;
+vat=pay*12.5/100;
+net=pay+vat;
+clrscr();
+	printf("\n\t\t=====Producet Detils=====");
+	printf("\n\t\tProducet code  ::%ld",pcode);
+	printf("\n\t\tMRP in Rs      ::%f",mrp);
+	printf("\n\t\tQuntaty tokan  ::%f",qty);
+	printf("\n\t\t=========================");
+	printf("\n\t\tTotal amount   ::%f",total);
+	printf("\n\t\tDiscount amount::%f",dis);
+	printf("\n\t\t=========================");
+	printf("\n\t\tPaybale amount ::%f",pay);
+	printf("\n\t\t12.5%%vat in Rs::%f",vat);
+	printf("\n\t\t==========================");
+	printf("\n\t\tNet Bill amount::%f",net);
+

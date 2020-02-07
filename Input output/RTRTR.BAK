@@ -1,0 +1,19 @@
+void main()
+{
+int n,a=1,x;
+float sum=0.0,tram=1;
+clrscr()
+{
+printf("Enter how many tram do you want:");
+scanf("\n%d",&n);
+printf("\nEnter base value of the serice:");
+scanf("\n%d",&x);
+while(a<=n)
+{
+	sum=sum+tram;
+	a++;
+	tram=tram*x;
+	}
+printf("\nserise %dtram=%f",sum);
+getch();
+}

@@ -1,0 +1,10 @@
+void main()
+{
+char c;
+clrscr();
+printf("\nEnter any charcter:");
+scanf("\n%c",&c);
+if(c>=65||c<=122)
+printf("\nAssci value %d");
+getch();
+}

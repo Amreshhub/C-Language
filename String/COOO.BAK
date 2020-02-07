@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+void main()
+{
+char str1[100],str2[100],*pstr1,*pstr2;
+pstr1=str1;pstr2=str2;
+int a,b;
+s1:clrscr();
+printf("\nEnter 1st string:");
+fflush(stdin);
+gets(pstr1);
+if(*pstr1=='\0')
+{
+	printf("\nMust enter string:");
+	delay(2000);
+	goto s1;
+	}
+s2:printf("\nEnter 2nd String:");
+fflush(stdin);
+gets(pstr2);
+if(*pstr2=='\0')
+{
+	printf("\nMust Enter String:");
+	goto s2;
+	}
+for(a=0;*(pstr1+a)!='\0';a++);
+for(b=0;*(pstr2+b)!='\0';*(pstr1+a)=*(pstr2+b),a++,b++);
+*(pstr1+a)='\0';
+printf("\nCodineaat string=%s",str1);
+getch();
+}

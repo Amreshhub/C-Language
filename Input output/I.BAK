@@ -1,0 +1,14 @@
+void main()
+{
+int n,y=1,prod;
+clrscr();
+printf("Enter whose tabal do you want:");
+scanf("\n%d",&n);
+while(n<=10)
+{
+	prod=n*y;
+	y++;
+	n++;
+printf("%dx%d=%d",n,y,prod);
+getch();
+}

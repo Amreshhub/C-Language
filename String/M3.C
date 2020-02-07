@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<conio.h>
+#define row 100
+#define col 100
+void main()
+{
+int num[row][col],podd=0,r,c,a,b;
+clrscr();
+printf("\nHOw many row do you want to enter:");
+scanf("\n%d",&a);
+printf("\nHow many columan do you want to enter:");
+scanf("\n%d",&b);
+for(r=0;r<a;r++){
+printf("\nInsert the value of row:%d:",r+1);
+for(c=0;c<b;c++);{
+printf("\nEnter the number:%d:",c+1);
+scanf("\n%d",&num[r][c]);
+if(num[r][c]>0)
+if(num[r][c]%2!=0)
+podd++;
+}
+}
+printf("\nTotal count of%dnos=%d",a*b,podd);
+getch();
+}

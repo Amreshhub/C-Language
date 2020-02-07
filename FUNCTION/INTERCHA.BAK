@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<conio.h>
+int interchange(int *a,int *b){
+int change;
+change=*a;
+*b=*a;
+*a=change;
+return(change);
+}
+void main(){
+int num1,num2,cnum;
+clrscr();
+printf("\nEnter any two number:");
+scanf("\n%d%d",&num1,&num2);
+printf("\nBefore changing number a=%d,b=%d",num1,num2);
+cnum=interchange(&num1,&num2);
+	printf("\nAfter interchang valuea=%d,b=%d",num1,cnum);
+getch();
+}

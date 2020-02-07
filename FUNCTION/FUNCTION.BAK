@@ -1,0 +1,50 @@
+#include<stdio.h>
+#include<conio.h>
+void sum(int a,int b){
+int add;
+add=a+b;
+printf("\nSum of two number:=%d",add);
+}
+int Sum(int a,int b,){
+int Add;
+Add=a+b;
+return(Add);
+}
+void prod(int a,int b){
+int mult;
+mult=a*b;
+printf("\nproudect of two number=%d",mult);
+}
+int Prod(int a,int b){
+int c;
+c=a*b;
+return(c);
+}
+void aver(int a,int b){
+int f;
+f=(a+b)/2;
+printf("\nAverage value=%d",f);
+}
+int Avg(int a,int b){
+int g;
+g=(a+b)/2;
+return(g);
+}
+void main(){
+int num1,num2,s,p,a;
+clrscr();
+printf("\nEnter any two number:");
+scanf("\n%d%d",&num1,&num2);
+sum(num1,num2);
+s=Sum(num1,num2);
+printf("\nSum of two number=%d",s);
+prod(num1,num2);
+p=Prod(num1,num2);
+printf("\nproudect of two number=%d",p);
+aver(num1,num2);
+a=Avg(num1,num2);
+printf("\nAverage value=%d",a);
+getch();
+}
+
+

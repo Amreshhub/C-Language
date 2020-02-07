@@ -1,0 +1,24 @@
+void main()
+{
+int a=1,n,num,h=0.0,s=0.0;
+clrscr();
+printf("Enter how many you want no:");
+scanf("\n%d",&n);
+while(a<=n)
+{
+	printf("\nEnter no :%d:",a);
+	scanf("\n%d",&num);
+	if(a==1)
+	h=num;
+	if(num>h)
+	h=num;
+	else
+	s=num;
+	if(num<s)
+	s=num;
+	a++;
+	}
+printf("\nHighest value=%d",h);
+printf("\nsmallost value=%d",s);
+getch();
+}

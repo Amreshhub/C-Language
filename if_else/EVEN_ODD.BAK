@@ -1,0 +1,22 @@
+//Wap in c language to accept a number chack and display given number Even or odd//
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+void main()
+{
+int num;
+a1:clrscr();
+	printf("\nEnter A number:");
+	sacnf("\n%d",&num);
+	if(num<=0)
+	{
+		printf("\nInvalied number found plz positive number::");
+		delay(3000);
+		goto a1;
+		}
+	if(num%2==0)
+		printf("\n%d is even number",num);
+	else
+		printf("\n%d is odd number",num);
+getch();
+}

@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+#define size 200
+void main(){
+float num[size],sum=0.0,avg=0.0;
+int a,n;
+a1:clrscr();
+printf("\nHow many do you want to Enter:");
+scanf("\n%d",&n);
+if(n<=0||n>size)
+{
+	printf("\nInvalied number found plz enter size 1TO %d",size);
+	delay(3000);
+	goto a1;
+	}
+for(a=0;a<n;a++)
+{
+printf("\nEnter number::%d=",a+1);
+scanf("\n%f",(num+a));
+sum=sum+*(num+a);
+}
+avg=sum/n;
+printf("\nSum of %d numbers=%f",n,sum);
+printf("\nAverage value=%f",avg);
+getch();
+}

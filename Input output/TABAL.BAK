@@ -1,0 +1,13 @@
+void main()
+{
+int x=1,num,prod;
+clrscr();
+printf("How tabal do you want plz enter:");
+scanf("\n%d",&num);
+prod=num*i;
+while(i<=10)
+{
+	printf("\n%dx%d=%d",num,i,prod);
+	a++;}
+getch();
+}

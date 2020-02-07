@@ -1,0 +1,38 @@
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+#define size 300
+void main()
+{
+int n,x;
+float num[size],sum=0.0,avg=0.0,*sum1,*avg1;
+sum1=&sum ;avg1=&avg;
+a1:clrscr();
+printf("\nEnter How many Number do You want:");
+scanf("\n%d",&n);
+if(n<=0||n>size)
+{
+	printf("\nMust Enter positive and number Enter between 1 to%d",size);
+	delay(3000);
+	goto a1;
+	}
+for(x=0;x<n;x++)
+{
+	printf("\nEnter number:%d:",x+1);
+	scanf("\n%f",(num+x));
+	if(*(num<=0)
+	{
+		printf("\nMust Enter positive value tray again:");
+		x--;
+		continue;
+		}
+*sum1=*sum1+*(num+x);
+}
+*avg1=*sum1/n;
+printf("\nSum of Number=%f",*sum1);
+printf("\nAvrage Value=%f",*avg1);
+getch();
+}
+
+
+

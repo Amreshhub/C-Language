@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+void factoril(int num){
+int fact,cnum;
+cnum=num;
+for(fact=1;cnum>0;fact=fact*cnum,cnum--);
+printf("\nFactriol value %d!=%d",cnum,fact);
+}
+int Factoril(int num){
+int fact1;
+for(fact1=1;num>0;fact1=fact1*num,num--);
+return(fact1);
+}
+void main(){
+int snum,fact2;
+a1:clrscr();
+printf("\nEnter any number:");
+scanf("\n%d",&snum);
+if(snum<0)
+{
+	printf("\nmust enter positive integer value");
+	delay(3000);
+	goto a1;
+	}
+factoril(snum);
+fact2=Factoril(snum);
+printf("\nFactriol value%d!=%d",snum,fact2);
+getch();
+}

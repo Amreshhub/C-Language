@@ -1,0 +1,11 @@
+void main()
+{
+int e=1;
+clrscr();
+while(e<=10)
+{
+	printf("line no 1\n",e);
+	e++;
+	}
+getch();
+}

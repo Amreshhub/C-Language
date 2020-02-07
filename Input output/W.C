@@ -1,0 +1,11 @@
+void main()
+{
+int a=1;
+clrscr();
+while(a<=10)
+{
+	printf("%d ",&a);
+	a++;
+}
+getch();
+}

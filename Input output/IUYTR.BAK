@@ -1,0 +1,14 @@
+void main()
+{
+int n,x,tram=1,sum=0.0,a=1;
+clrscr();
+printf("Enter valu in base:");
+scanf("\n%d",&x);
+while(a<=n)
+{
+	sum=sum+tram;
+	a++;
+	tram=tram*x;
+	}
+getch();
+}

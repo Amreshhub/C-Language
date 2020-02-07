@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int num,cont,d;
+clrscr();
+printf("\nEnter the number:");
+scanf("\n%d",&num);
+while(cont>0)
+{
+	d=num/10;
+	cont++;
+	}
+printf("\nNumber of degites=%d",d);
+getch();
+}

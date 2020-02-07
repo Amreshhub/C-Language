@@ -1,0 +1,36 @@
+//program besed on call by reference
+#include<stdio.h>
+#include<conio.h>
+void num(float a,float b,float *add,float *mul,float *avg){
+*add=a+b;
+*mul=a*b;
+*avg=*add/100;
+}//close of function
+void main(){
+float a,b,sum,manu,devid;
+clrscr();
+s1:printf("\nEnter 1St number:");
+scanf("\n%f",&a);
+if(a<0)
+{
+	printf("\nInvalied number found PLz!Enter agan");
+	delay(3000);
+	goto s1;
+	}
+s2:printf("\nEnter 2nd number:");
+scanf("\n%f",&b);
+if(b<0)
+{
+	printf("\nInvalied number found PLz!Enter agan");
+	delay(3000);
+	goto s2;
+	}
+num(a,b,&sum,&manu,&devid);
+printf("\nSum of two number=%f",sum);
+printf("\nMultiplaction of two number=%f",manu);
+printf("\nAverage value of two number=%f",devid);
+getch();
+}//close of main
+
+
+

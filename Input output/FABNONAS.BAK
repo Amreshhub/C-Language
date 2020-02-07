@@ -1,0 +1,17 @@
+void main()
+{
+int n,tail=0,haid=1,tram=1,a=1;
+clrscr();
+printf("Enter how many tram do you want:");
+scanf("\n%d",&n);
+while(a<=n)
+{
+ printf("\n%d ",tram);
+	tail=haid;
+	haid=tram;
+	tram=haid+tail;
+	a++;
+	}
+ getch();
+ }
+
